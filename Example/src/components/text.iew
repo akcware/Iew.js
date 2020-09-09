@@ -1,0 +1,22 @@
+<title>text</title>
+
+<content>
+  <div>
+    <label ew-bind="count"></label>
+    <button ew-onclick="increment">increment</button>
+  </div>
+</content>
+
+<script>
+  ({
+    data: {
+      count: 0
+    },
+    methods: {
+      increment() {
+        this.data.count++;
+      }
+    }
+  })
+
+</script>

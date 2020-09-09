@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="./src/iew.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <label>Name</label>
+        <input type="text" ew-model="name" />
+        <span ew-bind="name" style="margin-left: 1rem"></span>
+      </div>
+      <div ew-if="false">
+        <label>Name</label>
+        <input type="text" ew-model="namae" />
+        <span ew-bind="namae" style="margin-left: 1rem"></span>
+      </div>
+      <button ew-click="test">test</button>
+      <text ew-if="true"></text>
+      <text ew-if="false"></text>
+      <text></text>
+      <text></text>
+    </div>
+
+    <script>
+      ewmport("./src/components/text");
+
+      let app = Iew({
+        el: "#app",
+        data: {
+          name: "test",
+          namae: "",
+        },
+        methods: {
+          test() {
+            console.log("test");
+          },
+        },
+        created() {
+          console.log("hello world");
+        },
+      });
+    </script>
+  </body>
+</html>
