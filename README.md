@@ -1,6 +1,8 @@
 # iew.js
 Small front-end javascript library that is similar to vue. Currently it supports bindings, models, onclick event and components. Just 4KB.
 
+![Iew Logo](https://raw.githubusercontent.com/akcware/Iew.js/master/Logo/Iew.png)
+
 ## Initialize
 End of the body, initialize the iew with script tag:
 
